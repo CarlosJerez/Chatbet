@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChatBet</title>
     <link rel="icon" type="image/svg" href="/Assets/favicon.svg" />
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="">
     <header>
       <div>
         <img src="./Assets/ChatbetCO_idle 1.png" width="166px" height="40px" alt="logo" />
@@ -27,7 +27,7 @@
 
     <article class="contenedor1">
       <div class="contenedor1-data">
-        <button class="button-1">Bet Chat Bot IA - API</button>
+        <div class="button-1">Bet Chat Bot IA - API</div>
         <h1 class="contenedor1-data-titulo">
           Apostar como Nunca Antes: Descubre el Cambio de Juego
         </h1>
@@ -35,7 +35,7 @@
           Bienvenido a la revolución en apuestas deportivas, porque ya es hora de
           transforma tus apuestas con la potencia de la tecnología IA
         </p>
-        <button class="button-2">¡Contactar ya!</button>
+        <div class="button-2 contactar"><a href="#Contactanos">¡Contactar ya!</a></div>
       </div>
       <div class="contenedor1-img">
         <img src="./Assets/Chatbet_Land00.gif" width="504px" height="458px" alt="gif01" />
@@ -135,7 +135,7 @@
           sugerencias de apuestas personalizadas. <br /><br />
           ¡Apostar nunca fue tan emocionante e inteligente a la vez!"
         </p>
-        <div class="button-2">¡Contactar ya!</div>
+        <div class="button-2 contactar"><a href="#Contactanos">¡Contactar ya!</a></div>
       </div>
       <div class="contenedor4-img">
         <img src="./Assets/recomendaciones-img-1.svg" alt="" />
@@ -151,34 +151,42 @@
     <article id="Contactanos" class="contenedor6">
       <h1>¿Listo para la acción?</h1>
       <h3>Únete a la emoción</h3>
-      <form class="container-form">
+      <form class="container-form" id="formulario">
         <div class="form-entrada form-nombre">
           <label for="">Nombre</label>
-          <input type="text" placeholder="Ingresa tu nombre" />
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
         </div>
         <div class="form-entrada form-correo">
           <label for="">Correo</label>
-          <input type="email" placeholder="Ingresa tu Correo" />
+          <input type="email" id="correo" placeholder="Ingresa tu Correo" />
         </div>
         <div class="form-entrada form-numero">
           <label for="">Numero de contacto</label>
-          <input type="tel" placeholder="Ingresa un numero de contacto" />
+          <input type="tel" id="telefono" placeholder="Ingresa un numero de contacto" />
         </div>
         <div class="form-entrada form-pais">
           <label for="">Pais</label>
           <input
             type="text"
+            id="pais"
             placeholder="Ingresa el país y/o ciudad de donde nos envías"
           />
         </div>
         <div class="form-entrada form-opcional">
           <label for="">¿Algún mensaje o duda adicional? (Opcional)</label>
-          <textarea placeholder="Deja tu jugada maestra o consulta aquí cualquier duda que tengas."></textarea>
+          <textarea
+            id="comentario"
+            placeholder="Deja tu jugada maestra o consulta aquí cualquier duda que tengas."
+          ></textarea>
         </div>
+        <button type="submit" class="button-2 enviar-form">Enviar formulario</button>
       </form>
     </article>
-
-    <footer></footer>
-    <script src="script.js"></script>
+    
+    <footer>
+      <img src="./Assets/footer-logos.svg" alt="">
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

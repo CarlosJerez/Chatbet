@@ -17,10 +17,17 @@ body {
   color: white;
   margin: 32px 119px;
   font-family: "Poppins";
+  margin-bottom: 0;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 h1 {
@@ -33,22 +40,29 @@ p {
 nav ul {
   list-style: none;
   overflow: hidden;
-  padding: 0;
+  text-decoration: none;
+  margin: 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
   margin-bottom: 110px;
 }
 
 header nav {
-  width: 764px;
+  flex: 1;
+  align-self: center;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 30px;
 }
 
 .contenedor1 {
@@ -79,24 +93,26 @@ header nav ul {
   width: 239px;
   height: 40px;
   border-radius: 37px;
-  padding: 8px 40px;
-  border: none;
   color: #9595ff;
   font-size: 16px;
-  background-color: rgba(84, 84, 235, 0.2);
   font-weight: bold;
+  background-color: rgba(84, 84, 235, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contenedor1-data .button-2 {
   width: 198px;
-  height: 56px;
-  padding: 16px 40px;
+  height: 58px;
   border-radius: 49px;
   border: 1px #9595ff solid;
   color: #9595ff;
   font-size: 16px;
   font-weight: bold;
   background-color: rgba(84, 84, 235, 0.2);
+  display: grid;
+  place-content: center;
 }
 
 .contenedor2 {
@@ -264,9 +280,8 @@ header nav ul {
   font-size: 16px;
   font-weight: bold;
   background-color: rgba(84, 84, 235, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 }
 
 .contenedor4-data p {
@@ -372,6 +387,41 @@ header nav ul {
   border: 1px #ffffff solid;
 }
 
+.contactar a {
+  height: 100%;
+  width: 100%;
+  padding: 15px 30px;
+}
+
+.contactar:hover {
+  background-color: #9595ff;
+  color: #030712;
+  cursor: pointer;
+}
+
+.contenedor6 .button-2 {
+  width: 198px;
+  height: 58px;
+  border-radius: 49px;
+  border: 1px #9595ff solid;
+  color: #9595ff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(84, 84, 235, 0.2);
+  display: grid;
+  place-content: center;
+}
+
+.enviar-form:hover {
+  background-color: #9595ff;
+  color: #030712;
+  cursor: pointer;
+}
+
 footer {
-  height: 131px;
+  background: linear-gradient(90deg, rgba(47,74,195,1) 0%, rgba(80,83,230,0.30024509803921573) 30%, rgba(83,84,233,0) 50%, rgba(85,84,235,0.30024509803921573) 70%, rgba(85,84,235,1) 100%);
+  clip-path: polygon(50% 0%, 100% 80%, 100% 100%, 0 100%, 0 80%);
+  display: grid;
+  place-content: center;
+  height: 96px;
 }
