@@ -8,17 +8,17 @@
 
 html {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1920px;
 }
 body {
   min-height: 100dvh;
   background-color: #030712;
   background-image: url(Assets/Group\ 872.svg), url(Assets/Rectangle\ 2.svg),
-    url(Assets/Group\ 876.svg), url(Assets/Rectangle\ 444.svg), url(Assets/Group\ 25.svg),
+    url(Assets/Group\ 876.svg), url(Assets/Group\ 878.svg), url(Assets/Group\ 25.svg),
     url(Assets/Group\ 875.svg);
   background-size: 100%, 100%, 100%, 100%, 100%, 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top center, 0px 740px, 0px 1308px, 0px 2048px, bottom, bottom;
+  background-position: top center, 0px 649px, 0px 1163px, 0px 1881px, bottom, bottom;
   color: white;
   margin: 32px 119px 0px 119px;
 }
@@ -72,6 +72,7 @@ nav a:hover {
 
 .contenedor1 {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .contenedor1-data {
@@ -90,13 +91,36 @@ nav a:hover {
   padding-left: 16px;
   border-left: 1px solid #9595ff;
 }
-.contenedor1-img {
-  margin-left: -120px;
+
+.container-1{
+  position: relative;
+  display: flex;
+  margin-left: auto;
 }
+
 .contenedor1-img-Gradient {
-  margin-left: -480px;
-  margin-top: 374px;
+  position: absolute;
+  top: 377px;
+  z-index: 2;
 }
+.contenedor1-img-Buttom{
+  position: relative;
+  background-image: url(Assets/Property\ 1=Default.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 126px;
+  height: 126px;
+  cursor: pointer;
+  border-radius: 100%;
+  z-index: 3;
+  top: 164px;
+  left: 317px;
+}
+.contenedor1-img-Buttom:hover{
+  background-image: url(Assets/Property\ 1=Variant2.svg);
+}
+
+
 .contenedor1-data .button-1 {
   width: 239px;
   height: 40px;
@@ -124,6 +148,7 @@ nav a:hover {
 
 .contenedor2 {
   display: flex;
+  justify-content: space-between;
   height: 492px;
   padding-top: 60px;
   margin-bottom: 40px;
@@ -238,7 +263,8 @@ nav a:hover {
 }
 
 .contenedor3-img {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
 }
 .contenedor3-img div {
