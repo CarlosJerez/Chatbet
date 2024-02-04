@@ -44,7 +44,7 @@
         </div>
       </div>
       <div class="container-1">
-        <div class="contenedor1-img-Buttom"
+        <div class="contenedor1-img-Buttom" onclick="openModal()"
         ></div>
         <img
           class="contenedor1-img"
@@ -229,6 +229,18 @@
         <button type="submit" class="button-2 enviar-form">Enviar formulario</button>
       </form>
     </article>
+
+    <div class="modal-overlay modal-cerrado" id="modal">
+      <div class="modal">
+        <div class="modal-close" onclick="closeModal()">
+          <span>x</span>
+        </div>
+        <video id="video" width="80%" loop controls>
+          <source src="./Assets/VideoCharBet_DesktopPurple.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
 
     <script
       type="text/javascript"

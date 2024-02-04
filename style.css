@@ -92,7 +92,7 @@ nav a:hover {
   border-left: 1px solid #9595ff;
 }
 
-.container-1{
+.container-1 {
   position: relative;
   display: flex;
   margin-left: auto;
@@ -103,7 +103,7 @@ nav a:hover {
   top: 377px;
   z-index: 2;
 }
-.contenedor1-img-Buttom{
+.contenedor1-img-Buttom {
   position: relative;
   background-image: url(Assets/Property\ 1=Default.svg);
   background-size: 100%;
@@ -116,10 +116,9 @@ nav a:hover {
   top: 164px;
   left: 317px;
 }
-.contenedor1-img-Buttom:hover{
+.contenedor1-img-Buttom:hover {
   background-image: url(Assets/Property\ 1=Variant2.svg);
 }
-
 
 .contenedor1-data .button-1 {
   width: 239px;
@@ -258,7 +257,7 @@ nav a:hover {
   font-weight: 900;
   margin-left: 5px;
 }
-.contenedor3-data div{
+.contenedor3-data div {
   display: flex;
 }
 
@@ -488,4 +487,42 @@ img {
 
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.modal-close{
+  align-self: last baseline;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.modal-close:hover{
+color: hsla(0, 0%, 100%, 0.7);
+}
+
+.modal-cerrado{
+  display: none;
 }

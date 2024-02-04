@@ -8,6 +8,7 @@ const correo = document.getElementById("correo");
 const telefono = document.getElementById("telefono");
 const pais = document.getElementById("pais");
 const comentario = document.getElementById("comentario");
+const video = document.getElementById('video')
 
 form.addEventListener("submit", enviarCorreo);
 
@@ -102,4 +103,14 @@ function enviar() {
       alert(JSON.stringify(err));
     }
   );
+}
+
+function openModal(){
+  document.getElementById('modal').classList.remove('modal-cerrado')
+  video.play()
+}
+function closeModal(){
+  document.getElementById('modal').classList.add('modal-cerrado')
+  video.pause();
+  video.currentTime = 0;
 }
