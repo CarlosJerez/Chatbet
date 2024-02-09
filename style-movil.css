@@ -306,4 +306,14 @@
   .contactar a {
     padding: 6px 15px;
   }
+
+  .modal {
+    width: 90%;
+    justify-content: center;
+    padding: 7px;
+    margin-top: -10%;
+  }
+  video{
+    width: 100%;
+  }
 }
