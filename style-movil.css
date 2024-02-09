@@ -8,14 +8,14 @@
       url(Assets/Responsive/Frame\ 21.svg),
       url(Assets/Responsive/Rectangle\ 2.svg),
       url(Assets/Responsive/Frame\ 19.svg), url(Assets/Responsive/IA.svg),
-      url(Assets/Responsive/Frame\ 20.svg);
-    background-size: 100%, 100%, 100%, 100%, 100%, 100%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      url(Assets/Responsive/Frame\ 20.svg),
+      url(Assets/Responsive/Group\ 890.svg);
+    background-size: 100%, 100%, 100%, 100%, 45%, 100%,100%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
       no-repeat;
-    background-position: top center, 0px 649px, 0px 1163px, 0px 1881px,
-      0px 2068px, bottom;
+      background-position: top center, 0px 625px, 0px 738px, 0px 2032px, 163px 2904px, 0px 3702px, bottom;
     margin: 0;
-    padding: 40px 24px 100px 24px;
+    padding: 40px 24px 30px 24px;
   }
 
   h1 {
