@@ -202,7 +202,8 @@
     justify-content: center;
   }
   .contenedor3-img {
-    overflow-y: auto;
+    overflow: hidden;
+    overflow-x: auto;
   }
 
   .contenedor4 {
