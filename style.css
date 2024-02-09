@@ -14,11 +14,13 @@ body {
   min-height: 100dvh;
   background-color: #030712;
   background-image: url(Assets/Group\ 872.svg), url(Assets/Rectangle\ 2.svg),
-    url(Assets/Group\ 876.svg), url(Assets/Group\ 878.svg), url(Assets/Group\ 25.svg),
-    url(Assets/Group\ 875.svg);
+    url(Assets/Group\ 876.svg), url(Assets/Group\ 878.svg),
+    url(Assets/Group\ 25.svg), url(Assets/Group\ 875.svg);
   background-size: 100%, 100%, 100%, 100%, 100%, 100%;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top center, 0px 649px, 0px 1163px, 0px 1881px, bottom, bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top center, 0px 649px, 0px 1163px, 0px 1881px, bottom,
+    bottom;
   color: white;
   margin: 32px 119px 0px 119px;
 }
@@ -511,7 +513,7 @@ img {
   justify-content: space-between;
   padding: 20px;
 }
-.modal-close{
+.modal-close {
   align-self: last baseline;
   padding: 10px;
   font-size: 25px;
@@ -519,10 +521,11 @@ img {
   cursor: pointer;
   border-radius: 100%;
 }
-.modal-close:hover{
-color: hsla(0, 0%, 100%, 0.7);
+.modal-close:hover {
+  color: hsla(0, 0%, 100%, 0.7);
 }
 
-.modal-cerrado{
+.modal-cerrado {
   display: none;
 }
+
